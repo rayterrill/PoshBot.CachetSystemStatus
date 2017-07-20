@@ -10,10 +10,15 @@ Allows for reading and writing component statuses to a Cachet.io install
   PluginConfiguration = @{
     'PoshBot.CachetSystemStatus' = @{
       BaseURL = 'https://mystatusurl.mydomain.com/api/v1'
+      CachetToken = 'MY_CACHET_TOKEN'
     }
   }
 ```
 3. Install the module into your PoshBot instance
 ```
 !install-plugin poshbot.cachetsystemstatus
+```
+4. Assign permissions to write back to the Cachet system (for example, to a PoshBot sysadmins group)
+```
+!Add-RolePermission sysadmins poshbot.cachetsystemstatus:write
 ```

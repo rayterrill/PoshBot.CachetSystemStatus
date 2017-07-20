@@ -24,8 +24,8 @@ PrivateData = @{
     # These are permissions we'll expose in our poshbot module
     Permissions = @(
         @{
-            Name = 'read'
-            Description = 'Run commands that query Acme systems'
+            Name = 'write'
+            Description = 'Run comands that update Cachet'
         }
     )
 } # End of PrivateData hashtable
